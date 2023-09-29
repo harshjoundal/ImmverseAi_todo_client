@@ -63,7 +63,7 @@ const Todo = () => {
                 return;
               }
               await handleAdd()
-              setTrigger(state=>!state)
+              // setTrigger(state=>!state)
               setInput("")
           }} className={styles.addtodoButton}>ADD</button>
         </div>

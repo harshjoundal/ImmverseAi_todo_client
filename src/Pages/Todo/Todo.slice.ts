@@ -75,6 +75,8 @@ export const TodoSlice = createSlice({
         })
         .addCase(Addtodo.fulfilled,(state,action)=>{
             state.addtodoLoading = false
+            state.todos = action.payload.data
+            // console.log(action.payload.data)
         })
         .addCase(Addtodo.rejected,(state)=>{
             state.addtodoLoading = false
